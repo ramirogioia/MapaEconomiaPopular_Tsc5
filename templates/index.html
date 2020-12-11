@@ -1,0 +1,80 @@
+<html>
+  <head>
+     <title>Formulario Mapa Popular</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+	   integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	 <style>
+		.bg-image {   /* The image used */   background-image: url("https://i.imgur.com/FpFNFuq.png");      /* Add the blur effect */   filter: blur(0px);   -webkit-filter: blur(0px);      /* Full height */   height: 50%;       /* Center and scale the image nicely */   background-position: center;   background-repeat: no-repeat;   background-size: cover; }
+</style>
+  </head>
+  <body>
+  	<div class="bg-image"></div>
+    <div class="container"><br>
+      <center>
+        <h2>Formulario Mapa Popular</h2>
+      </center>
+    </div>
+
+    <div class=container><br>
+    <div class="row align-items-center justify-content-center">
+    <div class="col-md-5">
+      <form  action="" method="post" role="form">
+        {{ form.csrf }}
+        <div class="form-group">
+          <label for="feelings">Categoria:</label>
+          <select class="form-control" name="feelings">
+            {% for i in form.feelings_options %}
+            <option value= {{ i['id'] }}>{{ i['name']}}</option>"
+            {% endfor %}
+          </select>
+          <label for="subcategoria">Sub-categoria:</label>
+          <select class="form-control" name="subcategoria">
+            {% for i in form.feelings_options2 %}
+            <option value= {{ i['id'] }}>{{ i['name']}}</option>"
+            {% endfor %}
+          </select>
+          <label for="rubro">Rubro:</label>
+          <select class="form-control" name="rubro">
+            {% for i in form.feelings_options3 %}
+            <option value= {{ i['id'] }}>{{ i['name']}}</option>"
+            {% endfor %}
+          </select>
+          <label for="nombreunidadproductiva">Nombre unidad productiva:</label>
+          <input type="text" class="form-control" name="nombreunidadproductiva">
+            <br>
+          <label for="callenumero">Calle y numero:</label>
+          <input type="text" class="form-control" name="callenumero">
+	         <br>
+	        <label for="localidad">Localidad:</label>
+	        <input type="text" class="form-control" name="localidad">
+          <br>
+          <label for="aniorecuperacion">Año de recuperacion:</label>
+	        <input type="text" class="form-control" name="aniorecuperacion">
+          <br>
+          
+
+	</div>
+        <br>													   
+        <center>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </center>
+      </form>
+      <br>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+
+        {% for category, message in messages %}
+                <div class="alert alert-{{category}}" role="alert">
+                {{ message }}
+                </div>
+        {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+    </div>
+    <br>
+    </div>
+    </div>
+  </body>
+</html>
