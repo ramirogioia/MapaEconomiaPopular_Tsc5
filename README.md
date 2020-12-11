@@ -15,7 +15,6 @@ Versión: 1.0
 
 
 ### Pre-requisitos 📋
-
 ---
 
 _Que cosas necesitas para instalar el software_
@@ -28,9 +27,7 @@ _Que cosas necesitas para instalar el software_
 * VirtualEnv (Si estas en Windows)
 ```
 
-
 ## Comenzando 🚀
-
 ---
 
 ### Instalación 🔧
@@ -66,7 +63,7 @@ _Si estas en Windows, y para facilitar la corrida de la APP, te recomendamos cre
 2- Activar virtualenv luego de haber creado las carpetas del ambiente:
 \env\Scripts\activate.bat
 
-moverse haasta esa ucacion y correr el archivo "activate"
+moverse hasta esa ubicacion y correr el archivo "activate"
 
     source activate
 
