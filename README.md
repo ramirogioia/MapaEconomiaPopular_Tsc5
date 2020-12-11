@@ -89,3 +89,27 @@ _Herramientas utilizadas en el proyecto_
 - [Flask](https://github.com/sronmiz/flask-sqlite-form) - Flask
 - [WTForms](https://wtforms.readthedocs.io/en/2.3.x/) - WTForms
 - [Pip](https://pypi.org/project/pip/) - Pip
+
+## Dependencias Externas
+
+---
+
+_Para ser capaz de correr el programa satisfactoriamente no alcanza con levantar esta aplicacion, vas a tener que tener corriendo la aplicacion del backend y la base de datos de manera local:_
+
+- BACKEND CONSTRUIDO EN NODEJS.
+- BASE DE DATOS POSRTGRESS PARA CONSUMIR Y NUTRIR DATOS.
+
+_Esto nos da un total de 3 aplicativos que se deben estar corriendo en simultaneo para ser capaces de utilizar de manera adecuada esta aplicacion_
+
+_La informacion referida al Backend y a la DB se encuentra en otro repositorio junto con la aplicacion de EMANUEL CARZOGLIO_
+
+```
+Repositorio git@github.com:carzoglioemanuel/tsc5.git
+```
+
+
+
+PROYECTO REALIZADO POR:
+
+* GLEW IMANOL
+* GIOIA RAMIRO ALEJANDRO 
