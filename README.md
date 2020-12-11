@@ -1,14 +1,13 @@
-# API-Documental
+# Mapa Economia Popular - Trabajo Social Comunitario
 
 ---
 
-API-Documental es un conjunto de recursos que ofrece los siguientes servicios:
+ Mapa Economia Popular es un conjunto de recursos que ofrece los siguientes servicios:
 
-- ABM de formularios digitales para poder disponibilizar nuevos formularios a las aplicaciones del banco Supervielle.
-- Listar los formularios existentes para su generación.
-- Obtener el detalle de un formulario digital para visualizar su template y obtener la estructura de campos que lo componen.
-- Generar un formulario digital para poder completar los campos dinámicos del formulario con la información necesaria por la aplicación consumidora.
-- Guardar documentación en el repositorio corporativo del banco Supervielle, por ejemplo en el legajo digital del cliente.
+- Grabado de formularios e informacion de interes para la Universidad Nacional de Avellaneda.
+- Lectura de información desde la base de datos POSTGRESS de la facultad, tanto para la carga de categorias, subcategorias y los rubros.
+- Conexión con una aplicacion backend implementada con NodeJS usada como intermediario entre la UI y la base de datos.
+- Diseño de HTML que presenta un formulario WEB para ingresar informacion de interes.
 
 **Desarrollo de Canales e Innovación**
 
@@ -22,13 +21,6 @@ _Clonar el proyecto:_
 
     git clone https://bitbucket.gscorp.ad/scm/du6/api-documental.git
 
-Error
-
-    fatal: unable to access 'https://bitbucket.gscorp.ad/scm/du6/api-documental.git': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
-
-_se resuelve ejecutando el siguiente comando_
-
-    export GIT_SSL_NO_VERIFY=1
 
 ### Pre-requisitos 📋
 
